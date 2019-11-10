@@ -1,0 +1,17 @@
+Zadanie
+Program przyjmuje argument w postaci jednej liczby typu float(ozn. N).
+	Uwaga, należy sprawdzić, czy format jest poprawny,
+	a jeżeli nie, to wypisać komunikat,
+	informujący dokładnie, w którym miejscu jest błąd.
+
+Następnie program generuje ustaloną liczbę potomków(np. 20), których
+każdy śpi przez N * 3 ^ -2 sekundy. Po tym czasie potomek losuje liczbę
+całkowitą z zakresu 0-32. Jeżeli jest to liczba mniejsza od 32,
+to spokojnie kończy życie zwracając tę liczbę jako status.
+W przeciwnym wypadku wywołuje funkcję abort.
+
+Rodzic, po wygenerowaniu wszystkich potomków, przechodzi do pętli
+oczekiwania na ich (potomków) zakończenie. Odpytywanie o stan
+potomków ma być zwyczajne, tj. blokujące. Dla każdego
+odczytanego statusu wypisuje go oraz PID procesu,
+którego on dotyczy(ł).
